@@ -454,6 +454,11 @@ img {
   text-align: center;
 }
 
+.about__btns-coll {
+  display: flex;
+  column-gap: 2rem;
+}
+
 .about__buttons {
   display: flex;
   justify-content: center;
