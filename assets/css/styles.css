@@ -502,8 +502,10 @@ img {
 }
 
 .skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
+  row-gap: 3.5rem;
+  justify-content: center;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  column-gap: 0.5rem;
 }
 
 .skills__arrow {
@@ -511,30 +513,47 @@ img {
   transition: 0.4s;
 }
 
+.skils__data {
+  text-align: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+.skils__data:hover {
+  box-shadow: 0 2px 5px var(--first-color);
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
 .skills__titles {
   display: flex;
-  justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: var(--mb-0-25);
+}
+
+.skills__img {
+  height: 100%;
+  width: 100%;
+  padding: var(--mb-0-5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
 }
 
 .skills__name {
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-}
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
+  color: var(--first-color);
 }
 
-.skills__bar {
-  background-color: var(--first-color-lighter);
+.extra__gap {
+  margin-bottom: var(--mb-2-5);
+  margin-left: var(--mb-2-5);
 }
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
 .skills__html,
 .skills__figma {
   width: 90%;
