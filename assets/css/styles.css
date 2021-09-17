@@ -24,6 +24,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --copright: #000;
+  --font-icon: #fff;
 
   /*========== Font and typography ==========*/
 
@@ -84,6 +85,7 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
   --copright: #fff;
+  --font-icon: hsl(var(--hue-color), 69%, 61%);
 }
 /*========== Button Dark/Light ==========*/
 
@@ -351,8 +353,39 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.home__scroll {
-  /* display: none; */
+.contact__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--mb-1);
+}
+
+.contact-intro__information {
+  display: flex;
+  margin-bottom: var(--mb-1);
+  align-items: center;
+  box-shadow: 0 2px 5px var(--first-color);
+  padding: 0 0.5rem;
+  border-radius: 1.8rem;
+  background: var(--first-color-second);
+}
+
+.intro-home__subtitle {
+  display: inline-flex;
+  height: 6rem;
+  width: 100%;
+  column-gap: 1rem;
+}
+
+.intro-contact__icon {
+  font-size: 1.5rem;
+  color: var(--font-icon);
+  margin-right: var(--mb-0-75);
+}
+
+.intro-contact__title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--font-icon);
 }
 
 .home__scroll-button {
@@ -1012,6 +1045,11 @@ img {
     margin-left: 0;
   }
 
+  .intro-home__subtitle,
+  .contact__intro {
+    display: none;
+  }
+
   .protfolio__title {
     text-align: center;
   }
@@ -1076,6 +1114,9 @@ img {
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__intro {
+    grid-template-rows: 1fr;
   }
 
   .qualification__section {
