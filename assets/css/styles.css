@@ -771,7 +771,7 @@ img {
 }
 
 .protfolio__content {
-  padding: 0 1.5rem;
+  padding: 0 3.5rem;
 }
 
 .protfolio__img {
@@ -789,8 +789,18 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
-.protfolio__button:hover .button__icon {
-  transform: translateX(0.25rem);
+.protfolio__button {
+  column-gap: var(--mb-0-5);
+}
+
+.protfolio__button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px var(--first-color);
+}
+
+.protfolio__code {
+  grid-template-columns: repeat(2, 0.5fr);
+  width: 3rem;
 }
 
 .swiper-button-next::after,
@@ -1000,6 +1010,18 @@ img {
 
   .extra__gap {
     margin-left: 0;
+  }
+
+  .protfolio__title {
+    text-align: center;
+  }
+
+  .protfolio__description {
+    display: none;
+  }
+
+  .protfolio__content {
+    padding: 0 2rem;
   }
 
   .skills__list {
@@ -1262,11 +1284,11 @@ img {
   }
 
   .swiper-button-prev {
-    left: -3.5rem;
+    left: -1.5rem;
   }
 
   .swiper-button-next {
-    right: -3.5rem;
+    right: -1.5rem;
   }
 
   .swiper-container-horizontal > .swiper-pagination-bullets {
